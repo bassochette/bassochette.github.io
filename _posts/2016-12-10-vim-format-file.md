@@ -7,7 +7,7 @@ tags: ["vim", "command", "cli"]
 ---
 {% include JB/setup %}
 
-- escape insert mode <Esc> (`jj` if configured)
+- escape insert mode `Esc` (`jj` if configured)
 - `gg=G`
 
 ```
