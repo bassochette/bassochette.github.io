@@ -2,7 +2,7 @@
 layout: post
 title: "tmux commands"
 description: "tmux cheatsheet"
-category: 
+category: "cheatsheet"
 tags: ["tmux", "tmuxinator", "cheatsheet"]
 ---
 {% include JB/setup %}
