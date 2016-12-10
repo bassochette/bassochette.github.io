@@ -12,5 +12,6 @@ tags: ["tmux", "tmuxinator", "cheatsheet"]
 - New window: `Ctrl-a c`
 - Rename window:  `Ctrl-a ,`
 
-# references:
+## references:
 - https://gist.github.com/MohamedAlaa/2961058
+- http://www.dayid.org/comp/tm.html
