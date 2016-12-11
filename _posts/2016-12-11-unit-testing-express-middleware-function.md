@@ -138,3 +138,4 @@ describe(
 #### Documentation:
 
 - jsdoc promise : https://github.com/jsdoc3/jsdoc/issues/509
+- sinon: http://sinonjs.org/docs/
