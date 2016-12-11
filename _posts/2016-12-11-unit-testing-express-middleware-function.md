@@ -7,12 +7,14 @@ tags : [node, unit-test, js, chai, mocha, sinon, express, middleware]
 {% include JB/setup %}
 
 ### Description
+
 This function fetch a sessionToken sent via header.
 If none are provided the request is go threw without a session.
 If the token is valid a session is set to the request.
 If the token is invalid, a 403 http code is sent with a message.
 
 The `execute` function implementation from the validate token service follow this interface:
+
 ```javascript
 /**
  * @param {String} token
@@ -25,7 +27,9 @@ I am not trying to use a http request or load express but just test the behavior
 of this function.
 
 ### code
+
 #### middleware/setSession.js
+
 ```javascript
 "use strict";
 import validationService from "../services/validateToken";
@@ -57,7 +61,9 @@ export default function(request, response, next){
 ```
 
 ### test
+
 #### spec/middleware/setSessionSpec.js
+
 ```javascript
 "use strict";
 import helper from "../../helper";
@@ -121,12 +127,14 @@ describe(
 ```
 
 ### Issue
+
 - How can I test the response 403
 
 ### Solution
 
-none yet
+- none yet
 - sinon? stub? spy?
 
 #### Documentation:
+
 - jsdoc promise : https://github.com/jsdoc3/jsdoc/issues/509
