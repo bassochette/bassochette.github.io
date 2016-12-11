@@ -62,7 +62,7 @@ $ swagger-codegen generate -i http://petstore.swagger.io/v2/swagger.json -l ruby
 $ npm install --save swagger-client
 ```
 
-```Javascript
+```javascript
 "use strict"
 const Swagger = require('swagger-client');
 
