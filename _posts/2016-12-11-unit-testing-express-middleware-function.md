@@ -1,12 +1,12 @@
 ---
 layout: post
-category : ❓ wtf 🍀
-tagline: "Unit testing express middleware function with mocha, chai"
-tags : [node, unit-test, js, chai, mocha, sinon, express, middleware]
+category : memo
+tagline: "Unit testing express ASYNC middleware function with mocha, chai and sinon"
+tags : [node, unit-test, js, chai, mocha, sinon, express, middleware, babel, async]
 ---
 {% include JB/setup %}
 
-### Description
+# Description
 
 This function fetch a sessionToken sent via header.
 If none are provided the request is go threw without a session.
@@ -22,13 +22,9 @@ The `execute` function implementation from the validate token service follow thi
  */
 ```
 
-I try to only test the middleware function outside of express.
-I am not trying to use a http request or load express but just test the behavior
-of this function.
+# code
 
-### code
-
-#### middleware/setSession.js
+## *middleware/setSession.js*
 
 ```javascript
 "use strict";
@@ -41,7 +37,7 @@ export default function(request, response, next){
     request.session = false;
     return next()
   };
-  validationService.execute(token)
+  return validationService.execute(token)
     .then(
       session => {
         request.session = session;
@@ -60,12 +56,13 @@ export default function(request, response, next){
 }
 ```
 
-### test
+# test
 
-#### spec/middleware/setSessionSpec.js
+## *spec/middleware/setSessionSpec.js*
 
 ```javascript
 "use strict";
+// sinon mocha and chai are configured in the helper module
 import helper from "../../helper";
 import setSessionMiddleware from "../../../middleware/setSession"
 describe(
@@ -109,15 +106,34 @@ describe(
     it(
       "send 403 and message if the token is invalid",
       () => {
+        let request = {
+          headers: {
+            token: "invalid token"
+          }
+        };
+        let response = {
+          status: (code) => {
+            return {
+              json: (data) => {
+                return data
+              }
+            }
+          }
+        }
+
+        let statusSpy = sinon.spy(response, "status");
         setSessionMiddleware(
           request,
           response,
           () => {
-            /*
-              ISSUE:
-              How to test the status is 403 a
-              How to test the json function will be called with the message?
-            */
+            // will never execute
+          }
+        )
+        .then(
+          resp => {
+            statusSpy.restore()
+  					    sinon.assert.calledOnce(statusSpy);
+  					    done();
           }
         )
       }
@@ -126,16 +142,14 @@ describe(
 )
 ```
 
-### Issue
+## Run the test
 
-- How can I test the response 403
+```bash
+$ NODE_ENV=test mocha --require babel-core/register spec/middleware/setSessionSpec.js
+```
 
-### Solution
 
-- none yet
-- sinon? stub? spy?
-
-#### Documentation:
-
+# Documentation:
+- https://semaphoreci.com/community/tutorials/best-practices-for-spies-stubs-and-mocks-in-sinon-js
 - jsdoc promise : https://github.com/jsdoc3/jsdoc/issues/509
 - sinon: http://sinonjs.org/docs/
