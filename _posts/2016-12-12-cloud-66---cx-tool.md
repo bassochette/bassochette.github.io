@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "cloud 66 - cx toolbelt commands"
+title: "[cloud 66] cx toolbelt commands"
 description: ""
 category: "memo"
 tags: ["cli", "cloud66", "cx toolbelt", "cx", "ops", "cheatsheet"]

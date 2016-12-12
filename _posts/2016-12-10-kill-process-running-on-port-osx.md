@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "find and kill process running on port osx"
+title: "[OSX] find and kill process running on port osx"
 description: " "
 category: "memo"
 tags: ["osx", "cli"]
@@ -12,7 +12,7 @@ tags: ["osx", "cli"]
 example port 3000
 
 ```
-$ lsof -i :3000 
+$ lsof -i :3000
 COMMAND   PID   USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
 node    *81602* julien   14u  IPv6 0x669792e160564ee3      0t0  TCP *:hbci (LISTEN)
 ```

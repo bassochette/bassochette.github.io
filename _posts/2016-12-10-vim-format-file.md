@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Vim format file"
+title: "[Vim] format file"
 description: ""
 category: "memo"
 tags: ["vim", "command", "cli"]
