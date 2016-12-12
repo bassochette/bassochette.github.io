@@ -7,15 +7,15 @@ tags: ["osx", "cli", "grep", "xargs", "sed"]
 ---
 {% include JB/setup %}
 
-## Command
+# Command
 
 ```
 $ grep -ilr "sourceString" * | xargs -I@ sed -i '' 's/sourceString/targetString/g' @
 ```
 
-## description
+# description
 
-### grep -- *file pattern searcher*
+## grep -- *file pattern searcher*
 
 from OSX grep man page
 
@@ -23,13 +23,13 @@ from OSX grep man page
   * `-l`: `--files-with-matches` Only the names of files containing selected lines are written to standard output.
   * `-r`: `-R`, `--recursive` Recursively search subdirectories.
 
-### xargs -- *construct arguments list(s) and execute utility*
+## xargs -- *construct arguments list(s) and execute utility*
 
 from OSX zargs man page
 
   * `-I@ ** @`:
 
-### sed -- *stream editor*
+## sed -- *stream editor*
 
 from OSX man page
 
