@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Search and replace all occurence of a string in every file in specified directory"
+title: "[OSX] Search and replace all occurence of a string in every file in specified directory"
 description: ""
 category: "memo"
 tags: ["osx", "cli", "grep", "xargs", "sed"]
