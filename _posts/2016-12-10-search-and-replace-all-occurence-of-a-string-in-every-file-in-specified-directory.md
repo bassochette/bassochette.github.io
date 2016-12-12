@@ -25,7 +25,7 @@ from OSX grep man page
 
 ## xargs -- *construct arguments list(s) and execute utility*
 
-from OSX zargs man page
+from OSX xargs man page
 
   * `-I@ ** @`:
 
