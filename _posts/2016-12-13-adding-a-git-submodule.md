@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Adding a git submodule"
+title: "[Git] Adding a git submodule"
 description: ""
 category:
 tags: ["git", "git submodules", "cli", "dependencies", "dependency management", node]

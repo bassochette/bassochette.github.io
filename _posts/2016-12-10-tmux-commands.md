@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "tmux commands"
-description: "tmux cheatsheet"
-category: "cheatsheet"
+title: "[tmux] commands"
+description: "new window & rename window"
+category: "memo"
 tags: ["tmux", "tmuxinator", "cheatsheet"]
 ---
 {% include JB/setup %}

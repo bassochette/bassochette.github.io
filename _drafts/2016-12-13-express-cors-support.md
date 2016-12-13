@@ -49,7 +49,7 @@ app.use(
   )
 )
 
-// allow all origins
+// allow all origins // not working
 app.use(helmet({
   frameguard: {
     action: "allow-from",

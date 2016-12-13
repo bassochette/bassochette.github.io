@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Using babel node with nodemon"
+title: "[Node] Using babel node with nodemon"
 description: ""
 category: "memo"
 tags: ["cli", "nodemon", "babel", "ES6", "ES2015", "nodejs"]

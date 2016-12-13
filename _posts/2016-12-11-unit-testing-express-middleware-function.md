@@ -1,7 +1,7 @@
 ---
 layout: post
 category : memo
-tagline: "Unit testing express ASYNC middleware function with mocha, chai and sinon"
+title: "[Unit Testing] express ASYNC middleware function with mocha, chai and sinon"
 tags : [node, unit-test, js, chai, mocha, sinon, express, middleware, babel, async]
 ---
 {% include JB/setup %}

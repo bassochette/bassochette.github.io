@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Cool links of the day"
+title: "[Links] Cool links of the day"
 description: ""
 category: links
 tags: ["phrak", "python"]

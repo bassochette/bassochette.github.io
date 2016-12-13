@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Calling an http api every X seconds using curl"
+title: "[Curl] Calling an http api every X seconds using curl"
 description: ""
 category: memo
 tags: ["cli", "bash", "inline scripting", "json", "http", "api", "curl", "python"]
