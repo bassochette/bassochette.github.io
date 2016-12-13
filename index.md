@@ -1,6 +1,6 @@
 ---
 layout: page
-title: yo.
+title: Index
 tagline: 你好。
 ---
 {% include JB/setup %}
