@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[tmux] commands"
+title: "[Tmux] commands"
 description: "new window & rename window"
 category: "memo"
 tags: ["tmux", "tmuxinator", "cheatsheet"]

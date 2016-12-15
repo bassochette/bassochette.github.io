@@ -14,6 +14,7 @@ Refused to display 'http://local.dev:8000' in a frame because it set 'X-Frame-Op
 ```
 
 # solution
+## With helmet
 ```javascript
 import express from "express";
 import helmet from "helmet";
@@ -59,6 +60,14 @@ app.use(helmet({
 
 // other configs
 // ...
+```
+
+## Dirty header
+
+```
+response.header("Access-Control-Allow-Origin", "*");
+response.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+response.header("X-Frame-Options", "ALLOW-FROM *");
 ```
 
 
