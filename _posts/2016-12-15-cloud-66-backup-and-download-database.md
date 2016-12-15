@@ -51,8 +51,9 @@ $ gunzip api_staging.sql.gz
 
 # Restore locally
 
-```
+```bash
 $ psql dbname < api_staging.sql
+# lot's of logs
 ```
 
 # Documentation
