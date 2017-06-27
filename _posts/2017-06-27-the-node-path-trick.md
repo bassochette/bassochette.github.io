@@ -7,7 +7,7 @@ tags: ["nodejs", "typescript", "trick"]
 ---
 {% include JB/setup %}
 
-Let say you have a file structure like this one:
+* Let say you have a file structure like this one:
 
 ```
 index.ts
@@ -18,17 +18,19 @@ libs/
         parser.ts
 ```
 
-you go `NODE_PATH=libs ts-node index` (not a ts thing but we both use ts)
+* you go `NODE_PATH=libs ts-node index` (not a ts thing but we both use ts)
+
+All import are now relative to the path specified in the NODE_PATH variable.
 
 and then instead of importing like this:
 
 ``` libs/services/superService.ts
-import phone from "../parser";
+import phone from "../utils/parser";
 
 // more code
 ```
 
-yu can import like that:
+* yu can import like that:
 
 ```libs/services/superService.ts
 import phone from "utils/parser";
