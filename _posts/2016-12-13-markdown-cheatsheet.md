@@ -2,8 +2,8 @@
 layout: post
 title: "markdown cheatsheet"
 description: ""
-category: cheatsheet
-tags: ["markdown", "cheatsheet"]
+category: links
+tags: ["markdown", "cheatsheet", "links"]
 ---
 {% include JB/setup %}
 

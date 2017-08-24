@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Index
-tagline: 你好。
+tagline: stuff and things in no particular orders
 ---
 {% include JB/setup %}
 <ul class="posts">
