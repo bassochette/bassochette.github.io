@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[] Cucumber gender"
+title: "Cucumber gender"
 description: ""
 category: "Indoor Gardening"
 tags: ["cucumber", "gender", "male flower", "female flower", "marketmore", "strictly medicinal seeds"]
@@ -9,7 +9,13 @@ tags: ["cucumber", "gender", "male flower", "female flower", "marketmore", "stri
 
 # Male cucumber flower
 
+![Male close up]({{ site.url }}/assets/cucumber-gender/closup_male_cucumber_flower.jpg)
+
 # Female cucumber flower
+
+[Female close up]({{ site.url }}/assets/cucumber-gender/closup_female_cucumber_flower.jpg)
+
+[Female side close up]({{ site.url }}/assets/cucumber-gender/side_female_flower.png)
 
 # Cucumber marketmore, cucumis sativus
 
