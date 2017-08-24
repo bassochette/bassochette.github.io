@@ -33,10 +33,10 @@ author="Julien"
 
 # show help with -h
 if [ "$1" == "-h" ]; then
-echo "Usage: `basename $0` \"Post title\""
+echo "Usage: `basename $0` \"Post title\" \"Post category\""
 exit 0
 elif [ -z "$1" ]; then
-echo "Usage: `basename $0` \"Post title\""
+echo "Usage: `basename $0` \"Post title\" \"Post category\""
 exit 0
 fi
 
@@ -76,6 +76,7 @@ function ask {
 
 # post title
 title="$1"
+category="$2"
 
 # convert title to filename format
 # echo part replaces spaces with '-'
@@ -93,6 +94,7 @@ echo "---" >> $filename
 echo "layout: $layout" >> $filename
 echo "title: \"$title\"" >> $filename
 echo "author: \"$author\"" >> $filename
+echo "category: \"$category\"" >> $filename
 echo "date: `date +%F\ %H:%M:%S`" >> $filename
 
 
