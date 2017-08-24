@@ -26,9 +26,6 @@ editor=vim
 # Post directory
 folder=_posts/
 
-# Author
-author="Julien"
-
 ########## Program ##########
 
 # show help with -h
@@ -93,7 +90,6 @@ echo $filename
 echo "---" >> $filename
 echo "layout: $layout" >> $filename
 echo "title: \"$title\"" >> $filename
-echo "author: \"$author\"" >> $filename
 echo "category: \"$category\"" >> $filename
 echo "date: `date +%F\ %H:%M:%S`" >> $filename
 
