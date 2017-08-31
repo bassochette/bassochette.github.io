@@ -8,6 +8,7 @@ tags:
 - symfony
 - doctrine2
 - twig
+- chat bot
 ---
 
 - [Count with symfony and doctrine](http://sf2.memosdedev.com/faire-un-count-avec-doctrine2-dans-symfony2.html)
@@ -22,3 +23,5 @@ twig.extension.intl:
     tags:
       - { name: twig.extension }
 ```
+
+- [Botpress a chatbot framework based on node](https://botpress.io/get_started)
